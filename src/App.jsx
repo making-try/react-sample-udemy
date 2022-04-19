@@ -5,8 +5,8 @@ import { IncompleteTodo } from "./components/IncompleteTodo";
 import { CompleteTodo } from "./components/CompleteTodo";
 
 export const App = () => {
-  const [incompleteTodos, setIncompleteTodos] = useState(["aaaa", "bbbb"]);
-  const [completeTodos, setcompleteTodos] = useState(["cccc"]);
+  const [incompleteTodos, setIncompleteTodos] = useState([]);
+  const [completeTodos, setcompleteTodos] = useState([]);
   const [todoText, setTodoText] = useState("");
   const onChangeTodoText = (event) => setTodoText(event.target.value);
   const onClickAdd = () => {
